@@ -1,8 +1,12 @@
-<link href="/dist/output.css" rel="stylesheet"></link>
+import {Route} from "react-router-dom";
+import DefaultHOC from "./HOC/Default.HOC";
+import Temp from "./components/temp"
 function App() {
-  return <div className="App"> 
-  <h1 className="text-5xl">Hello</h1>
-  </div>
+return(
+<>
+<DefaultHOC path="/" exact component={Temp}/>
+</>
+);
 }
 
 export default App;
